@@ -15,12 +15,20 @@ public abstract class Empr {
 // MÉTODOS
     // faturamento total
     public float fatTotal(){
-        // a implementar
+        float fTotal = 0.00f;
+        for(Filial f : this.filiais){
+            fTotal = fTotal + f.getFaturamentoFilial();
+        }
+        return fTotal;
     }
 
-    // salario vase total
+    // salario base total
     public float salTotal(){
-       // a implementar
+       float totalSalario = 0.00f;
+       for(Filial f : this.filiais){
+           totalSalario = totalSalario + f.getGerente().getSalBaseGerente();
+       }
+       return totalSalario;
     }
 
     // valor total distribuído pela empresa

@@ -4,11 +4,11 @@ public class Gerente {
     private String nome;
     private float salBase;
 
-    public String getNome() {
+    public String getNomeGerente() {
         return nome;
     }
 
-    public float getSalBase() {
+    public float getSalBaseGerente() {
         return salBase;
     }
     
