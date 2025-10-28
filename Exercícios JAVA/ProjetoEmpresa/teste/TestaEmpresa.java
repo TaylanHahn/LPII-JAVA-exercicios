@@ -68,10 +68,14 @@ public class TestaEmpresa {
     }
 
 // Questao 5
+    TelaEmpresa tela = new TelaEmpresa(); // Instancio a TelaEmpresa
 
-    TelaEmpresa tela = new TelaEmpresa(); // Instancio a 
+    // Relatório das Empresas
     tela.relatorio(lista_empr);
 
+    // Relatório do Gerente
+    tela.relatorioGerente(lista_empr, g10);
+    tela.relatorioGerente(lista_empr, g20);
 
 }
 
