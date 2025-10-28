@@ -1,6 +1,10 @@
 package ProjetoEmpresa.dominio;
 
 public class EmprX extends Empr {
+
+    public EmprX(String n){
+        super(n);
+    }
     
     @Override
     public float txCom(){

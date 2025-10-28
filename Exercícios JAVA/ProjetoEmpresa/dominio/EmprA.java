@@ -2,6 +2,11 @@ package ProjetoEmpresa.dominio;
 
 public class EmprA extends Empr {
 
+
+    public EmprA(String n){
+        super(n);
+    }
+
     @Override
     public float txCom(){
         int numeroFiliais = this.filiais.size();

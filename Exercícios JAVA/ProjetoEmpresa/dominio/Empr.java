@@ -8,7 +8,8 @@ public abstract class Empr {
     protected List<Filial> filiais;
 
 // CONSTRUTOR
-    public Empr(){
+    public Empr(String n){
+        this.setNome(n);
         this.filiais = new ArrayList<>();
     }
 
@@ -55,6 +56,14 @@ public abstract class Empr {
     // Getters e Setters
     public String getNome() {
         return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public List<Filial> getFiliais() {
+        return filiais;
     }
 
 
