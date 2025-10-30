@@ -9,6 +9,7 @@ public class Edificio {
 
     public Edificio(String n){
         this.setNomeEdificio(n);
+        this.listaAptos = new ArrayList<Apto>();
     }
 
 
@@ -41,3 +42,4 @@ public class Edificio {
         return listaAptosAlugados;
     }
 }
+
