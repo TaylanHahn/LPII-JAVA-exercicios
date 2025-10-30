@@ -5,6 +5,7 @@ public abstract class Apto {
     private int andar;
     private float area;
     private boolean alugado;
+    private Inquilino inquilino;
 
     // CONSTRUTOR
     public Apto(int n, int an, float ar, boolean al, Edificio e){
@@ -57,19 +58,21 @@ public abstract class Apto {
 // MÉTODOS
 
     public float precoFinal(){
-        // implementar e remover o 0;
-        return 0;
+        return 10.00f * getArea() + precoExtra();
     }
 
     // Método ABSTRATO
     public abstract float precoExtra();
 
+
     public void aluga(Inquilino i){
-        // implementar lógica
+        this.inquilino = i;
+        this.alugado = true;
     }
 
     public void desaluga(){
-        // implementar lógica
+       this.inquilino = null;
+       this.alugado = false;
     }
 
 

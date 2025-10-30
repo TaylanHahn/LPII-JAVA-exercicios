@@ -7,6 +7,10 @@ public class Edificio {
     private String nome;
     private List<Apto> listaAptos;
 
+    public Edificio(String n){
+        this.setNomeEdificio(n);
+    }
+
 
 // GETTERS E SETTERS
     public String getNomeEdificio() {

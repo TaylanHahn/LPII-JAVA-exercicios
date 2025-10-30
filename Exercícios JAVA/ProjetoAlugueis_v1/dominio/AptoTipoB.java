@@ -2,7 +2,7 @@ package ProjetoAlugueis_v1.dominio;
 
 public class AptoTipoB extends Apto {
 
-    AptoTipoB(int n, int an, float ar, boolean al, Edificio e){
+    public AptoTipoB(int n, int an, float ar, boolean al, Edificio e){
         super(n, an, ar, al, e);
     }
    
