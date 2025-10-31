@@ -45,7 +45,9 @@ public abstract class Apto {
         this.area = area;
     }
 
-    // get inquilino
+    public Inquilino getInquilino() {
+        return inquilino;
+    }
 
     public boolean isAlugado() {
         return alugado;
@@ -63,7 +65,6 @@ public abstract class Apto {
 
     // Método ABSTRATO
     public abstract float precoExtra();
-
 
     public void aluga(Inquilino i){
         this.inquilino = i;
